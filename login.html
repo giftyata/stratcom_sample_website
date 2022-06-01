@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script> 
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image" href="Pictures/strat.png">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="index.js"></script> -->
+    <script src="login.js"></script>
+</head>
+<body>
+
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="https://www.google.com/maps/place/STRATCOM+COMMUNICATION+AND+IT+SOLUTIONS/@0.3474544,32.564734,15z/data=!4m5!3m4!1s0x0:0x13754449f55ddcaa!8m2!3d0.3474544!4d32.5647341">Contact</a></li>
+    <li><a href="aboutUs.html">About Us</a></li>
+    <li style="float: right;"><a href="register.html">register</a></li>
+    <li style="float: right;"><a href="login.html">login</a></li>
+</ul>
+    
+    <div class="animate modal-content">
+      
+      
+        <div class="imgcontainer">
+          <span class="close" onclick="close1()">&times;</span>
+          <img src="Pictures/Account-Avatar-Profile-PNG-Clipart.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" required id="username1">
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password"  required id="password1">
+            
+          <button type="submit" id="login1" onclick="login1()">Login</button>
+
+          <label>
+            <input type="checkbox" checked="checked"  id="checked1"> Remember me
+          </label>
+        </div>
+    
+        <div class="container">
+          <button class="cancelbtn" id="cancel1">Cancel</button>
+          <span class="psw">Forgot <a href="forgotPassword.html">password?</a></span>
+        </div>
+      
+    </div>
+
+</body>
+</html>
